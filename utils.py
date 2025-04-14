@@ -43,6 +43,6 @@ def format_results_nicely(lc_data, kg_data):
         f"Present this data as a clean summary, but do not evaluate or judge."
     )
 
-    model = genai.GenerativeModel("models/gemini-pro")
+    model = genai.GenerativeModel("models/gemini-2.0-flash")
     response = model.generate_content(prompt)
     return response.text
