@@ -42,6 +42,6 @@ def evaluate_user_profile(lc_data, kg_data):
         f"Provide a 3-4 sentence assessment and rate the user (out of 5) based on practical ML exposure."
     )
 
-    model = genai.GenerativeModel("models/gemini-pro")  # Adjust if model name changes
+    model = genai.GenerativeModel("models/gemini-2.0-flash")  # Adjust if model name changes
     response = model.generate_content(prompt)
     return response.text
